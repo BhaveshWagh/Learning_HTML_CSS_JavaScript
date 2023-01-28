@@ -1,0 +1,36 @@
+/* Universal Selector syntax : * { } */
+*{
+    
+    color: whitesmoke;
+}
+/* Element selector: element_Name { } */
+body{
+    background-color: #131417;
+}
+
+/* Id selector syntax : #first { } */
+#first{
+    background-color:chartreuse;
+}
+
+/* class selector .class_Name{ } */
+
+.purple{
+    background-color: purple;
+}
+
+/* Grouping selector */
+#first,#third{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Nested Selector  */
+
+#second>p>span.highlight{
+color: yellow;
+}
+
+/* psuedo Selector */
+p:hover{
+    color:darkblue;
+}

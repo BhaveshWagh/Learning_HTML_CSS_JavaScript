@@ -1,0 +1,22 @@
+body{
+    background-color: #131417;;
+    color: #131417;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    background-color: aqua; 
+}
+
+p{
+background-color: yellowgreen;
+}
+
+h2{
+    background-color: chartreuse;
+}   
+ul{
+    background-color: black;
+}
+li{
+    color:gold;
+}
