@@ -1,0 +1,26 @@
+/*Units In CSS:  rem(root element),em(element),vw(view width),vh(view height),%,px(pixel) */
+/* 1em = 16px */
+
+/* body{
+    border:solid;
+} */
+
+main {
+  border: 5px solid #4a4e69;
+  /* width: 50%; */
+  width: 25%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font: 1.5rem;
+}
+section {
+  border: 5px dashed salmon;
+  width: 5vw;
+}
