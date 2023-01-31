@@ -1,0 +1,64 @@
+<!-- Reservation Form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <header>
+        <h1>Travel reservation form</h1>
+        <h3>* denotes mandotory</h3>
+    </header>
+    <main>
+       <p>
+        <label for="name">Full Name*:</label>
+       <input type="text">
+       </p>
+       
+       <p><label for="email">Email address*:</label>
+        <input type="email"></p>
+       <p>
+        <label for="dropdown">Select Tour Package*:</label>
+        <select name="city" id="cityname">
+         <option value="goa">Goa</option>
+         <option value="pune">Pune</option>
+         <option value="nashik">Nashik</option>
+        </select></p>
+
+<p>       <label for="date">Arrival Date*: </label>
+    <input type="date"></p>
+
+       <p><label for="number">Number of persons*:</label>
+        <input type="number"></p>
+       
+       <label for="choice">What would you want to avail?*</label>
+       <p>
+        <input id="boarding" name="choice" type="checkbox">
+        <label for="boarding">Boarding</label>
+        
+        <input id="fooding" name="choice" type="checkbox">
+        <label for="fooding">Fooding</label>
+        
+        
+        <input id="sight seeing" name="choice"
+        type="checkbox">
+        <label for="sight seeing">Sight seeing</label></p>
+        
+       
+       <p><label for="code">Discount Coupon code:</label>
+        <input type="text"></p>
+     <p>  
+        <label for="choose">Terms and Conditions*:</label>
+        <input id="i agree" name="choose" type="radio">
+        <label for="i agree">I agree</label>
+        <input id="i disagree" name="choose" type="radio">  
+        <label for="i disagree">I disagree</label></p>
+
+     <p>  <input type="submit" value="Complete reservation">
+     </p>
+    </main>
+</body>
+</html>

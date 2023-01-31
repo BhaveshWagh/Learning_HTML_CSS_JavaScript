@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+    margin: 40px;    
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #1d3557;
+    float: left;
+}
+.red{
+   background-color: red;
+   clear: left;
+}
+
+.green{
+    background-color: green;
+    clear: right;
+}
+
+.blue{
+   background-color: blue;
+   clear: left;
+}
+.aqua{
+   background-color: aqua;
+   clear: right;
+}
+ 
+
+/* .container{
+   
+    border: 5px solid rebeccapurple;
+   
+   
+}
+.block1{
+    overflow:auto
+}
+.p1{
+    border: 2px solid green;
+    overflow:auto;
+    margin-right: 100px;
+    clear: both;
+}
+
+.p2{
+    clear: left;
+}
+
+.img1{
+  float: right;
+  margin-left: 40px;
+  }
+
+.img2{
+float: left;
+}
+ */
