@@ -142,5 +142,23 @@ header{
     margin-top: 20px;
 }
 .header-right img{
-    width: 600px ;
+    width: 100% ;
+}
+
+/* companies section */
+
+.companies-header{
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+}
+
+.logos {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    height: 46px;
 }
