@@ -5,3 +5,4 @@ function getName() {
 }
 getName()
 console.log(x)
+str
