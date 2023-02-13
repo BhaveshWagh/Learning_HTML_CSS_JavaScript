@@ -92,4 +92,12 @@ function z() {
     }
     x();
 } 
-z();
+z(); 
+function x() {
+    var i = 10;
+    setTimeout(function () {
+        console.log(i);
+    },3000);
+    console.log("Namaste JavaScript");    
+}
+x();
