@@ -53,9 +53,43 @@
 
 
 // Block Scoped
-let a = 10 
-{
-    var a = 10;
-console.log(a);
-}
-console.log(a);
+// let a = 10 
+// {
+//     var a = 10;
+// console.log(a);
+// }
+// console.log(a);
+
+// Closure in javaScript
+// def : Closure is basically a function along with it's lexical scope bunddle together forms a closure.
+ 
+// function x(){
+//     var a = 5;
+//     function y(){
+//         console.log(a);
+//     }
+//      var a = 200;
+//     y();
+// }
+// // x();
+// var z = x();
+// console.log(z); --- > undefined
+// z();
+// o/p --> 5
+
+// Here is the closure coming into the picture the above example is very suitable for closure's Because the Closure :
+// console.log("hello");
+
+
+function z() {
+    var b = 900;
+    function x() {
+        var a = 7;
+        function y() {
+            console.log(a,b);
+        }
+        y();
+    }
+    x();
+} 
+z();
