@@ -1,0 +1,62 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* A pseudo class is used to define a special state of an element */
+.primary-btn:link{
+    padding: 10px;
+    margin-left: 10px;
+    background-color:gray;
+    border-radius: 1.5rem;
+    color: gree;
+}
+
+.primary-btn:hover{
+    color: red;
+    background-color: black;
+}
+
+.primary-btn:visited{
+    color: orange;
+    
+}
+
+ul li:first-child{
+    background-color: violet;
+}
+
+/* ul li:last-child{
+    background-color: gray;
+} */
+
+/* nth child  */
+/* an +b */
+
+/* ul li:nth-child(5){
+    background-color: green;
+} */
+
+ul li:nth-child(2n + 1){
+    background-color: yellowgreen;
+}
+
+/* Pseudo element : A css pseudo element is used to style specified part of an element */
+
+h1::first-letter{
+    color: green;
+    font-size: 5rem;
+}
+
+p::first-line{
+    background-color:yellow;
+}
+h1::after{
+    color: green;
+}
+
+::selection{
+    background-color: black;
+    color: yellowgreen;
+}

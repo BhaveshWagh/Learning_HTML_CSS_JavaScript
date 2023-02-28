@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Global variable declaration */
+:root{
+    --primary-text-color:#222;
+    --secondary-text-color: #444;
+    --card-background-color:#fff;
+    --background-color: #eee;
+    --default-margin: 20px;
+}
+  
+.dark {
+    --primary-text-color:#fff ;
+    --secondary-text-color: #ddd;
+    --card-background-color:#333;
+    --background-color: #111;
+    
+}
+.container{
+    padding: 40px;
+    /* variable declaration css: use two highfun like this -- and give the name whatever you want means give a relevant name if you want separation then use single highfun its not mandatary and assign property which you want font,color etc and use it then the question is arrive in your mind  how to use your variable   syntax : --my-var : red  */
+    min-height: 100vh;
+    background-color: var(--background-color);
+    
+}
+
+.box{
+    padding: var(--default-margin);
+    background-color: var(--card-background-color);
+    margin-block: var(--default-margin);
+    border-radius: var(--default-margin);
+}
+
+h1{
+    text-align: center;
+    color: var(--primary-text-color);
+}
+h2{
+    margin-bottom: var(--default-margin);
+    color: var(--primary-text-color);
+} 
+p{
+    color: var(--secondary-text-color);
+}
