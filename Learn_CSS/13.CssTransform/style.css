@@ -1,0 +1,27 @@
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: teal;
+    margin: 20px auto;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:  0.5s ease;
+    /* transform: scaleY (2),scaleY(1.5); */
+    /* transform: skew(20deg,20deg); */
+    /* transform: translate(50%); */
+    /* transform: rotate(45deg) skew(20deg) translate(20px) scale(0.6) ; */
+    /* transform: rotate(45deg); */
+    transform-origin: 100px 200px;
+}
+
+.box:hover{
+    transform: rotate(360deg);
+}
