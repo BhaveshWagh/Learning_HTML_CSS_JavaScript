@@ -7,33 +7,30 @@ var x = 1;
 a();
 b();
 
-
-function a(){
-    var x = 10;
-    console.log(x);
+function a() {
+  var x = 10;
+  console.log(x);
 }
 
-function b(){
-    var x = 100;
-    console.log(x);
+function b() {
+  var x = 100;
+  console.log(x);
 }
 
-
-function a(){
-    var b = 11;
-    c();
-    function c(){
-        console.log(b);
-    }
+function a() {
+  var b = 11;
+  c();
+  function c() {
+    console.log(b);
+  }
 }
 
 var b = 10;
-a()
+a();
 
 // output : 11;
 
-
-// Temporal Dead Zone : let keyword 
+// Temporal Dead Zone : let keyword
 // Temporal dead zone is basically  a time between hoisting and till it assign a value.
 // ex
 
@@ -49,55 +46,52 @@ var b = 100;
 // o/p --> a = Cannot access 'a' before initialization. so the a is in a temporal dead zone for a time being that's why it gives an error.
 // b = undefined. (because Memory is allocated but not initialize.)
 // Because a is allocated in a separate memory in other hand b is allocates global object
- 
-
 
 // Block Scoped
-let a = 10 
+let a = 10;
 {
-    var a = 10;
-console.log(a);
+  var a = 10;
+  console.log(a);
 }
 console.log(a);
 
 // Closure in javaScript
 // def : Closure is basically a function along with it's lexical scope bunddle together forms a closure.
- 
-function x(){
-    var a = 5;
-    function y(){
-        console.log(a);
-    }
-     var a = 200;
-    y();
+
+function x() {
+  var a = 5;
+  function y() {
+    console.log(a);
+  }
+  var a = 200;
+  y();
 }
 // x();
 var z = x();
-console.log(z);// --- > undefined
+console.log(z); // --- > undefined
 z();
 // o/p --> 5
 
 // Here is the closure coming into the picture the above example is very suitable for closure's Because the Closure :
 // console.log("hello");
 
-
 function z() {
-    var b = 900;
-    function x() {
-        var a = 7;
-        function y() {
-            console.log(a,b);
-        }
-        y();
+  var b = 900;
+  function x() {
+    var a = 7;
+    function y() {
+      console.log(a, b);
     }
-    x();
-} 
-z(); 
+    y();
+  }
+  x();
+}
+z();
 function x() {
-    var i = 10;
-    setTimeout(function () {
-        console.log(i);
-    },3000);
-    console.log("Namaste JavaScript");    
+  var i = 10;
+  setTimeout(function () {
+    console.log(i);
+  }, 3000);
+  console.log("Namaste JavaScript");
 }
 x();
