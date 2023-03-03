@@ -4,31 +4,31 @@
 
 // This is a simple code for Calculate Area of circle,circumference and diameter
 
-const radius = [3,1,2,4]
+const radius = [3, 1, 2, 4];
 
 const area = function (radius) {
-    return Math.PI * radius * radius;
-}
+  return Math.PI * radius * radius;
+};
 
 const circumference = function (radius) {
-    return 2 * Math.PI * radius;
-}
+  return 2 * Math.PI * radius;
+};
 
 const diameter = function (radius) {
-    return 2 * radius;
-}
+  return 2 * radius;
+};
 
-const calculate = function(radius,logic){
-    const output = []
-    for(let i = 0; i < radius.length; i++){
-        output.push(logic(radius[i]));
-    }
-    return output;
-}
+const calculate = function (radius, logic) {
+  const output = [];
+  for (let i = 0; i < radius.length; i++) {
+    output.push(logic(radius[i]));
+  }
+  return output;
+};
 
-console.log(calculate(radius,area));
-console.log(calculate(radius,circumference));
-console.log(calculate(radius,diameter));
+console.log(calculate(radius, area));
+console.log(calculate(radius, circumference));
+console.log(calculate(radius, diameter));
 
 // console.log(circumference(radius));
 // console.log(diameter(radius));
@@ -50,32 +50,31 @@ console.log(calculate(radius,diameter));
 //     return output;
 // }
 
-
 // Event Listeners :
 
 function closr() {
-    let count = 0;
-document.getElementById("clickMe").addEventListener("click",function xyz(){
-    console.log("Button Clicked", count = count + 1);
-});}
+  let count = 0;
+  document.getElementById("clickMe").addEventListener("click", function xyz() {
+    console.log("Button Clicked", (count = count + 1));
+  });
+}
 
-closr()
+closr();
 
 // Callback function :
 // A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
 
-// eg-: 
+// eg-:
 
 setTimeout(function () {
-    console.log("Timer..");
-},2000)
+  console.log("Timer..");
+}, 2000);
 
-function x(y){
-    console.log("function x is executed succefully...");
-    y()
+function x(y) {
+  console.log("function x is executed succefully...");
+  y();
 }
 
 x(function y() {
-    console.log("function y is executed....");
+  console.log("function y is executed....");
 });
-
