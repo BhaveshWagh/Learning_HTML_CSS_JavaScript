@@ -1,19 +1,16 @@
-// for (i = 1; i <= 5; i++){
-//     for(j = 1; j <= i; j++){
-//         console.log(i,"\t");
-//     }
+function fibonacci(n) {
+  let n1 = 0;
+  let n2 = 1;
+  for (let i = 1; i <= n; i++){
+    process.stdout.write(n1 + ", ");
+    let nextIter = n1 + n2;
+    n1 = n2;
+    n2 = nextIter;
+    if (n1 > n){
+      break;
+    }
     
-// }
-
-
-
-let result = 0;
-for (let i = 1; i <= 5; i++) {
-  for (let j = 1; j <= i; j++) {
-    result += i;
-    // console.log(i);
   }
-  result += "\n";
-//   console.log(i);
 }
-// console.log(result);
+
+fibonacci(10000)
