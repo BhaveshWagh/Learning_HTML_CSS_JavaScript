@@ -1,12 +1,20 @@
 // This code is not complete half part of solution is done half part is remaining
-
 result = '';
-for (let i = 5; i <= 10; i++){
-    
-    result += i;
-    result += " ,"
+for (let i = 1; i <= 7; i++){
+    for (j = 1; j <= i; j++){
+        result += i;
+    }
+    result += '\n';
 }
-process.stdout.write(result);
+console.log(result)
+
+// result = '';
+// for (let i = 5; i <= 10; i++){
+    
+//     result += i;
+//     result += " ,"
+// }
+// process.stdout.write(result);
 // console.log(`${result}`);
 
 // function rangeOfNumbers(start,end){
