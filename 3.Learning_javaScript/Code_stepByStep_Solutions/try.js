@@ -1,26 +1,37 @@
-function minAndMax(arr) {
-  try{
-    let min, max;
-  if (arr.length > 0){
-    for (let i = 0; i < arr.length; i++) {
-        // console.log(arr[i]);
-        min = Math.min(...arr);
-        max = Math.max(...arr);
-      }
-      console.log(`Minimum Value = ${min}`);
-      console.log(`Maximum Value = ${max}`);
-}
+function lessThan100(a, b) {
+	let sum = a + b;
+  if (sum <= 100){
+    return true;
   }
-  catch(e){
-        // console.log( "array must contain at least one value")
-        console.error(e)
+  else{
+    return false;
   }
 }
 
+console.log(lessThan100(25,23))
+// function minAndMax(arr) {
+//   try{
+//     let min, max;
+//   if (arr.length > 0){
+//     for (let i = 0; i < arr.length; i++) {
+//         // console.log(arr[i]);
+//         min = Math.min(...arr);
+//         max = Math.max(...arr);
+//       }
+//       console.log(`Minimum Value = ${min}`);
+//       console.log(`Maximum Value = ${max}`);
+// }
+//   }
+//   catch(e){
+//         // console.log( "array must contain at least one value")
+//         console.error(e)
+//   }
+// }
+
 // arr = [1, 2, 3, 6, 4, 0, -2, -3, -1];
-arr = []
-// minAndMax();
-minAndMax([]);
+// arr = []
+// // minAndMax();
+// minAndMax([]);
 
 // This code is not complete half part of solution is done half part is remaining
 // result = '';
