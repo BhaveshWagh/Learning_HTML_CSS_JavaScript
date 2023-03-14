@@ -6,6 +6,7 @@ allBtns.addEventListener('click', counter);
 let value = 0;
 function counter(e) {
   const btn = e.target.id;
+  // console.log(btn)
   if (btn === 'increment') {
     value += 1;
     // console.log("btn incr clicked");
