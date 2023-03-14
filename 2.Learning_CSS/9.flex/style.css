@@ -19,13 +19,13 @@
     margin: 10px 10px;
 }
 
-#box-1{
+/* #box-1{
     /* order: 1; */
-    flex-grow: 1;
+    /* flex-grow: 1; */
     /* flex-shrink: 1; */
     /* flex: 1 2 50%;     */
-}
+/* }  */
 
-#box-3{
+/* #box-3{
     flex-basis: 25%;
-}
+} */
