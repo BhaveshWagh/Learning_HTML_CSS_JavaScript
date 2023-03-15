@@ -23,7 +23,7 @@
 //             map[n] = i;   //use map to store the value and index position
 //         }
 //     }
-//     // console.log(map)
+//     // consolegit merge master.log(map)
 // };
 
 var twoSum = function (nums, target) {
