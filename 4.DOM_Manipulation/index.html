@@ -1,66 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Manipulation</title>
-</head>
-<body>
-    <ul id="element">
-        <li class="list-item">1-element</li>
-        <li class="list-item">2-element</li>
-        <li class="list-item">3-element</li>
-    </ul>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      .input{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+      }
+      /* .container {
+        background-color: teal;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+        padding: 10px;
+        row-gap: 10px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+      }
+      .round-border {
+         border-radius: 50%; 
+        border: 5px solid black;
+      } */
+    </style>
+  </head>
+  <body>
+
+    <!-- Onchange Code  -->
+    <!-- <div id="container">
+      <div class="card">
+        <label>
+          Choose an ice-cream flavor:
+          <select name="ice-cream" class="ice-cream">
+            <option value="">Select One...</option>
+            <option value="saradine">Saradine</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="chocolate">Chocolate</option>
+          </select>
+          <div class="result"></div>
+        </label>
+      </div>
+    </div> -->
+<!-- <input type="text"> -->
+<div class="input"><input  type="text"  placeholder="Enter Some text here" name="name"/>
+  <p id="log"></p></div>      
+
+
+<script>
+  const input = document.querySelector('input');
+  const log = document.getElementById('log');
+
+  input.addEventListener('change',upDateValue);
+
+  function upDateValue(e){
+    log.textContent = e.target.value
+  }
+</script>
+<!-- OnChange end here -->
+
+
+    <!-- <div class="result"></div> -->
+
+    <!-- <div class="container" id="container">
+      <div class="box" id="box-1" >box-1</div>
+      <div class="box random" id="box-2">box-2</div> 
+      <div class="box" id="box-3">box-3</div>
+      <div class="box" id="box-4">box-4</div> -->
+
+    <!-- onclick="handleClick()" onmouseover="onMouseOver()" onmousemove="onMouseMove()"> -->
+
+    <!-- </div> -->
+
+    <!-- <form action="#" > -->
+    <!-- <input type="text" onkeypress="onKeyPress()" onkeydown="onKeyDown()"> -->
+
+    <!-- <input type="text" id="nameInput"> -->
+
+    <!-- </form> -->
+    <!-- <div id="firstDiv" class="allDivs">First Div</div>
+    <div class="allDivs">Second Div</div>
     <table>
         <tr>
             <td>One</td>
             <td>Two</td>
         </tr>
-        <tr>
+        <tr >
             <td>Three</td>
             <td>four</td>
         </tr>
-    </table>  
-    <!-- <script>//How to Access Root Node
-        // console.log(document.documentElement);
-        // console.log(document.head);
-        // console.log(document.body);
-        
-        //How to access any Childrens 
-        
-        // console.log(document.body.childNodes);
-        // console.log(document.body.children);
-        // for(node of document.body.children){
-        //     console.log(document.body.children);
-        // }
-        // console.log(document.body.firstChild);
-        // console.log(document.body.lastChild);
-        // console.log(document.body.firstElementChild);
-        // console.log(document.body.firstChild);
-        // using Array:
-        
-        // const ChildrensofBody = Array.from(document.body.children)
-        // console.log(ChildrensofBody);
-        
-        // Siblings 
-        // there are two properties 1. nextElementSibling, 2. prevElementSibling
-        
-        // const ulTag = document.body.children[0]
-        // console.log(ulTag);
-        // const firstli = ulTag.children[0]
-        // const thirdli = ulTag.children[2]
-        
-        // console.log(firstli.textContent);
-        // console.log(thirdli);
-        // console.log(thirdli.previousElementSibling.textContent);
-        
-        // Table DOM Manipulation
-        // const tableTag = document.body.children[1]
-        // console.log(tableTag.tBodies[0].rows[0].cells[1].textContent);
-        // how to style ? 
-        // console.log(tableTag.tBodies[0].rows[0].cells[0].style ="background-color:green;");
-        </script> -->
-    <script src="script.js"></script>
-</body>
+    </table>   -->
+    <!-- <button id="clickBtn">Click Me</button>
+    <script> -->
+    <!-- // Events -->
+
+    <!-- </script> -->
+
+    <!-- <script src="OnChange.js"></script> -->
+  </body>
 </html>
