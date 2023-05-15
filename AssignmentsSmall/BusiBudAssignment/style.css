@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+.card{
+  padding: 1.5em 1.5em 1.5em;
+  border-radius: 1rem;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+} */
+
+/* 
+ */
+
+/* .features-area {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 20px;
+}
+.features-card {
+  flex-direction: column;
+  gap: 20px;
+  max-width: 30%;
+  
+
+} */
+
+/* .features-card img{
+    width:200px;
+} */
+
+/* .big-feature-section {
+  padding: 30px 20px 0;
+  width: 50%;
+  
+}
+
+ .big-feature-container {
+  gap: 30px;
+  
+}  */
+
+/* .feature-desc {
+
+  /* flex-direction: column; 
+  align-items: flex-start; 
+}*/
