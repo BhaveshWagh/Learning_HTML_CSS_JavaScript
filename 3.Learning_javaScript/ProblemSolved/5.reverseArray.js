@@ -9,11 +9,10 @@ function reverseArray(array) {
     array[end] = temp;
     start++;
     end--;
+    console.log("*",array);
   }
-
-//   console.log(array);
 }
 
 let myarray = [1, 2, 3, 4, 5];
 reverseArray(myarray);
-console.log(myarray)
+console.log(myarray);
