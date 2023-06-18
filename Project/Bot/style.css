@@ -1,0 +1,46 @@
+#chat {
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+    overflow-y: scroll;
+  }
+  
+  #messages {
+    height: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+  }
+  
+  #input-container {
+    height: 10%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  #input {
+    width: 75%;
+    height: 100%;
+  }
+  
+  #send-button {
+    width: 20%;
+    height: 100%;
+    margin-left: 5%;
+  }
+
+  
+  .user-message {
+    background-color: lightblue;
+    margin-bottom: 10px;
+  }
+
+  .bot-message {
+    background-color: lightgreen;
+    margin-bottom: 10px;
+  }
