@@ -92,8 +92,8 @@
 .nav-search:hover {
   border: 2px solid orange;
 }
-
 /* box 4 */
+
 span {
   font-size: 0.7rem;
 }
@@ -114,3 +114,30 @@ span {
 }
 
 /* Navbar ends here */
+
+/* Panel section */
+.panel{
+  height: 40px;
+  background-color: #222f3d;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.panel-ops p{
+  display: inline;
+  margin-left: 15px;
+}
+
+
+
+.panel-ops{
+  width: 70%;
+  font-size: 0.85rem;
+}
+
+.panes-deals{
+  font: size 0.9rem;
+  font-weight: 700;
+}
