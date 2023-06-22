@@ -116,7 +116,7 @@ span {
 /* Navbar ends here */
 
 /* Panel section */
-.panel{
+.panel {
   height: 40px;
   background-color: #222f3d;
   display: flex;
@@ -125,19 +125,49 @@ span {
   color: white;
 }
 
-.panel-ops p{
+.panel-ops p {
   display: inline;
   margin-left: 15px;
 }
 
-
-
-.panel-ops{
+.panel-ops {
   width: 70%;
   font-size: 0.85rem;
 }
 
-.panes-deals{
+.panes-deals {
   font: size 0.9rem;
   font-weight: 700;
 }
+
+/* panel section ends */
+
+/* hero section */
+
+.hero-section {
+  background-image: url("./images/hero_image.jpg");
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-msg {
+  background-color: white;
+  color: black;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+  width: 90%;
+  margin-bottom: 25px;
+  
+}
+
+.hero-msg a {
+  color: #007185;
+}
+
+/* hero section end */
