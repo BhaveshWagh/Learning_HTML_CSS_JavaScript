@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 350px 50px;
+  overflow: hidden;
+}
+
+header {
+  grid-column: span 12;
+  display: flex;
+  gap: 5rem;
+  background-color: aqua;
+  /* margin:0.5rem; */
+}
+header > div:nth-child(3) {
+  margin-left: auto;
+}
+
+aside {
+  grid-column: span 2;
+  background-color: aquamarine;
+}
+main {
+  grid-column: span 10;
+  background-color: bisque;
+}
+footer {
+  grid-column: span 12;
+  background-color: lightblue;
+}
+
