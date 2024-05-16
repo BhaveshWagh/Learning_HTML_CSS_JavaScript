@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        background-color: rgb(17, 16, 16);
+        padding: 5px;
+        font-size: 18px;
+      }
+      ul {
+        display: flex;
+        justify-content: space-around;
+      }
+      li {
+        list-style: none;
+        
+      }
+      .dropdown-links {
+        display: block;
+        display: none;
+        position:absolute;
+        color: black;
+
+      
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      li:hover>a {
+        background-color: rgb(240, 240, 240);
+        color: black;
+      }
+      :hover > .dropdown-links {
+        display: block;
+        background-color: white;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+      }
+      .dropdown-link:hover{
+            color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">About</a></li>
+        <li class="item">
+          <a href="#">DropDown</a>
+          <ul class="dropdown-links">
+            <li><a class="dropdown-link" href="#">Link 1</a></li>
+            <li><a class="dropdown-link" href="#">Link 2</a></li>
+            <li><a class="dropdown-link" href="#">Link 1</a></li>
+          </ul>
+        </li>
+        <li class="item"><a href="#">Career</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
