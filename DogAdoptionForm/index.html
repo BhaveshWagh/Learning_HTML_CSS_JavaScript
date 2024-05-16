@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <!-- the entire body must be written by student -->
+    <form method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Name" />
 
-<body>
-	<!-- the entire body must be written by student -->
-	<form method="post">
-		<label for="name">Name</label>
-		<input type="text" id="name" placeholder="Name"/>
-		
-		<label for="phone">Phone Number</label>
-		<input type="text" id="phone" placeholder="Phone Number"/>
-		
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" placeholder="Phone Number" />
 
-		<label for="address">Address</label>
-		<input type="text" id="address" placeholder="Address"/>
-	
+      <label for="address">Address</label>
+      <input type="text" id="address" placeholder="Address" />
 
-		
-		<label for="checkbox">Have you ever lived with a Dog before?</label>
-		<input type="checkbox" id="checkbox" value="Have you ever lived with a Dog before?">
-		
-		<br><br>
-		<label for="multiSelect">Please select your preferred breeds:</label>
-		<select id="multiSelect" multiple>
-			<option value="labrador">Labrador</option>
-			<option value="germanShepherd">German Shepherd</option>
-			<option value="indainBullDog">Indina Bulldog</option>
-		</select>
-                              			
-		<input type="submit" id="submit" value="Submit"/>
-		
-		
-	</form>
-    <script type="text/javascript" src="./script.js">
-</script>
+      <label for="checkbox">Have you ever lived with a Dog before?</label>
+      <input
+        type="checkbox"
+        id="checkbox"
+        value="Have you ever lived with a Dog before?"
+      />
 
-</body>
+      <br /><br />
+      <label for="multiSelect">Please select your preferred breeds:</label>
+      <select id="multiSelect" multiple>
+        <option value="labrador">Labrador</option>
+        <option value="germanShepherd">German Shepherd</option>
+        <option value="indainBullDog">Indina Bulldog</option>
+      </select>
 
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>
