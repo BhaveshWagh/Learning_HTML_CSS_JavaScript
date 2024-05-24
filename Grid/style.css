@@ -1,0 +1,31 @@
+.grid1 {
+  width: 200px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas:
+    "a a a"
+    "b c d"
+    "e e e";
+}
+#box1 {
+  grid-area: a;
+  background-color: red;
+}
+#box2 {
+  grid-area: b;
+  background-color: aqua;
+}
+#box3 {
+  grid-area: c;
+  background-color: orange;
+}
+#box4 {
+  grid-area: d;
+  background-color: blue;
+}
+#box5 {
+  grid-area: e;
+  background-color: yellowgreen;
+}
